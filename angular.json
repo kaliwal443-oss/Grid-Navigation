@@ -1,0 +1,24 @@
+{
+  "projects": {
+    "grid-navigation": {
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/grid-navigation",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "styles": [
+              "node_modules/leaflet/dist/leaflet.css",
+              "src/styles.css"
+            ]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server"
+        }
+      }
+    }
+  }
+}
